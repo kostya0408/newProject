@@ -5,7 +5,7 @@ body {
 .header {
     width: 100%;
     height: 70px;
-    background-color: rgba(3, 7, 18, 0.85);
+    background-color: white;
     backdrop-filter: blur(10px);
 
     display: flex;
@@ -26,7 +26,7 @@ body {
 }
 
 .main h2 {
-    color: white;
+    color: black;
 }
 
 .menu {
@@ -40,7 +40,7 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: black;
     font-weight: bold;
 }
 
@@ -52,7 +52,7 @@ body {
 .full {
     width: 100%;
     height: 100vh;
-    background-image: url("background1.png");
+    background-image: url("background3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ body {
     text-align: center;
 
 }
-.text{
+.textContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,10 +74,10 @@ body {
 }
 
 
-.text h1{
+.textContainer h1{
     color: white;
     text-align: center;
-    margin-bottom: 55px;
+   
     transform: translateY(-25px);
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
@@ -127,7 +127,7 @@ body {
 
 
 
-.contact {
+.buttonCont {
     background-color: #2f8fff;
     border: 1px solid #6bbcff;
     font-size: 32px;
@@ -140,12 +140,12 @@ body {
     margin: 0 20px;
 
 }
-.contact:hover {
+.buttonCont:hover {
     background-color: #60A5FA;
     color: #171020;
     box-shadow: 0 0 12px #FF751855;
 }
-.lessons {
+.buttonLessons {
     background-color: transparent;
     border: 2px solid white;
     font-size: 32px;
@@ -156,9 +156,29 @@ body {
     text-align: center;
     display: inline-block;
 }
-.lessons:hover {
+.buttonLessons:hover {
     background-color: lightcyan;
     color: #171020;
     box-shadow: 0 0 12px #FF751855;
 }
+.copy {
+    background-color: #2f8fff;
+    border: 1px solid #6bbcff;
+    font-size: 32px;
+    font-weight: bold;
+    color: bisque;
+    border-radius: 5px;
+    padding: 12px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 20px;
+
+}
+.copy:hover {
+    background-color: #60A5FA;
+    color: #171020;
+    box-shadow: 0 0 12px #FF751855;
+}
+
+
 
