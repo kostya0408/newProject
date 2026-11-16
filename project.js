@@ -1,5 +1,5 @@
 function update() {
-    const end = new Date(2026, 10, 21);
+    const end = new Date(2026, 12, 1);
     let t = Math.max(0, end - new Date());
     document.getElementById("d").textContent = Math.floor(t / 86400000);
     document.getElementById("h").textContent = Math.floor(t / 3600000) % 24;

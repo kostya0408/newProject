@@ -1,6 +1,6 @@
 body {
     margin: 0;
-
+    background-color: #e8e8e8;
 }
 .header {
     width: 100%;
@@ -50,90 +50,82 @@ body {
 
 
 .full {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    text-align: center;
+
+}
+.full h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 20px;
+}
+.full p {
+    max-width: 600px;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.photo {
     width: 100%;
     height: 100vh;
     background-image: url("background3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    gap: 50px;
-    text-align: center;
-
-}
-.textContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20vh;
-}
-
-
-.textContainer h1{
-    color: white;
-    text-align: center;
-   
-    transform: translateY(-25px);
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-}
-.timer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-
-    margin-bottom: 60px;
-
-}
-.unit {
-    min-width: 90px;
-    padding: 15px;
-
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(5px);
-    color: bisque;
-    font-size: 30px;
-    font-weight: bold;
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: 0.3s;
-
-    width: 140px;
-    height: 140px;
-}
-.unit:hover {
-    transform: translateY(-5px);
-    background: rgba(0, 119, 255, 0.2);
-}
-.number {
-    font-size: 32px;
-    font-weight: bold;
-    color: #6bbcff;
-    text-shadow: 0 0 15px #2f8fff;
-}
-.label {
-    color: #d0d8ff;
-    font-size: 14px;
 }
 .cardButton{
     display: flex;
     gap: 10px;
     justify-content: center;
 }
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
 
-
-
-.buttonCont {
-    background-color: #2f8fff;
-    border: 1px solid #6bbcff;
-    font-size: 32px;
+}
+.unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.separator {
+    font-size: 60px;
     font-weight: bold;
-    color: bisque;
-    border-radius: 5px;
+    margin-top: -30px;
+}
+.number {
+    font-size: 72px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+.label {
+    color: #d0d8ff;
+    font-size: 14px;
+}
+.buttonCont {
+    background-color: #000;
+
+    border: 1px solid black;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    border-radius: 45px;
     padding: 12px 20px;
     text-align: center;
     display: inline-block;
@@ -141,44 +133,27 @@ body {
 
 }
 .buttonCont:hover {
-    background-color: #60A5FA;
-    color: #171020;
+    background-color: #6B6B6B;
+    color: white;
     box-shadow: 0 0 12px #FF751855;
 }
 .buttonLessons {
     background-color: transparent;
-    border: 2px solid white;
-    font-size: 32px;
+    border: 2px solid black;
+    font-size: 28px;
     font-weight: bold;
-    color: bisque;
-    border-radius: 5px;
+    color: black;
+    border-radius: 45px;
     padding: 12px 20px;
     text-align: center;
     display: inline-block;
 }
 .buttonLessons:hover {
-    background-color: lightcyan;
+    background-color: #6B6B6B;
     color: #171020;
     box-shadow: 0 0 12px #FF751855;
 }
-.copy {
-    background-color: #2f8fff;
-    border: 1px solid #6bbcff;
-    font-size: 32px;
-    font-weight: bold;
-    color: bisque;
-    border-radius: 5px;
-    padding: 12px 20px;
-    text-align: center;
-    display: inline-block;
-    margin: 20px 20px;
 
-}
-.copy:hover {
-    background-color: #60A5FA;
-    color: #171020;
-    box-shadow: 0 0 12px #FF751855;
-}
 
 
 
