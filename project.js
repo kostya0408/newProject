@@ -9,3 +9,10 @@ function update() {
 }
 update();
 setInterval(update, 1000);
+
+const textCopy = document.getElementById("copyText");
+const messageCopy = "StackSquad telegram:";
+
+textCopy.addEventListener("click", () => {
+    navigator.clipboard.writeText(messageCopy);
+});

@@ -27,6 +27,7 @@ body {
 
 .main h2 {
     color: black;
+    cursor: pointer;
 }
 
 .menu {
@@ -37,14 +38,21 @@ body {
     display: flex; /*Робить елементи всередені в один ряд*/
     gap: 25px;
 }
-
-.menu a {
+.menu-now {
+    text-decoration: none;
+    font-weight: bold;
+    color: brown;
+}
+.menu-now:hover{
+    color: #60A5FA;
+}
+.menu-off {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.menu a:hover {
+.menu-off:hover {
     color: #60A5FA;
 }
 
